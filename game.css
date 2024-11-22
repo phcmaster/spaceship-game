@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  #gameArea {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    position: relative;
+  }
+  .spaceship {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    background: url('nave.svg') no-repeat center center;
+    background-size: contain;
+  }
+
+#score {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+.enemy {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: red;
+  border-radius: 50%;
+}
+.bullet {
+  width: 5px;
+  height: 20px;
+  position: absolute;
+  background: yellow;
+  z-index: 10;
+}
+
+
+#gameOverScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+#retryButton {
+  padding: 10px 20px;
+  font-size: 20px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#retryButton:hover {
+  background: darkred;
+}
